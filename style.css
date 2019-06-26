@@ -8,24 +8,24 @@ html, body {
     padding:0;
 }
 
+.home-body {
+    background-color: #f4f4f4;
+}
+
 .nav-links:visited {
     text-decoration: none; color:white; 
-}
-
-.nav-links:hover {
-    text-decoration: none; color:blue;  
-}
-
-.nav-links:hover {
-    text-decoration: none; color:yellow;
 }
 
 .nav-links:hover {
     text-decoration: none; color:black 
 }
 
-.norm-links {
-    text-decoration: none; color:black;
+.norm-links:hover {
+    text-decoration: none; color:blue;
+}
+
+.norm-links:visited {
+    text-decoration: none; color:black; 
 }
 
 
@@ -42,13 +42,15 @@ html, body {
 
 .top-page {
     font-family: montserrat;
-    padding: 10px;
-    padding-top:10px;
-    padding-bottom:10px;
-    font-size: 110%;
-    background-color: #642F4F;
+   
+    font-size: 100%;
+    background-color: #2367ac;
     margin: 0;
     color: white;
+}
+
+.under-nav {
+    padding: 10px
 }
 
 .par {
@@ -59,6 +61,14 @@ html, body {
     font-size: 110%;
 }
 
+.center-text {
+    font-family: montserrat;
+    padding: 10px;
+    font-size: 110%;
+    text-align: center;
+
+}
+
 .title2 {
     text-align: center;
     color:rgb(14, 13, 13);
@@ -67,26 +77,52 @@ html, body {
     font-size: 25px;
 }
 
+  .navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
 #nav-bar {
     margin: 0;
     font-size: 15px;
     line-height: 1.3em;
-    padding: 0;
-    text-align: center;
+    padding-top: 10px;
     float: left;
     font-family: karla;
     margin: 0;
+    position: fixed;
+    overflow: hidden;
+    background: #2367ac;
+    color: white;
+    width: 100%;
+    top: 0;
+}
 
+#nav-bar a {
+    float: left;
+    display: block;
+    text-align: center;
 }
 
 .nav-li {
     display: inline-block;
     margin: 0 10px;
+
 }
 
 .column {
     float: left;
     width: 50%;
+    padding: 10px;
+    margin: 0px;
     padding: 10px;
 }
 
@@ -94,6 +130,8 @@ html, body {
     content: "";
     display: table;
     clear: both;
+    margin: 0px;
+    padding: 0px;
 }
 
 .logos {
@@ -118,6 +156,19 @@ html, body {
 }
 
 .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column3 {
+    float: left;
+    width: 33.333%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3::after {
     content: "";
     clear: both;
     display: table;
