@@ -8,6 +8,17 @@ html, body {
     padding:0;
 }
 
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
 .home-body {
     background-color: #f4f4f4;
 }
@@ -17,7 +28,7 @@ html, body {
 }
 
 .nav-links:hover {
-    text-decoration: none; color:black 
+    text-decoration: none; color:red;
 }
 
 .norm-links:hover {
@@ -40,31 +51,35 @@ html, body {
     font-size: 25px;
 }
 
-.top-page {
-    font-family: montserrat;
-   
-    font-size: 100%;
-    background-color: #2367ac;
-    margin: 0;
-    color: white;
-}
-
-.under-nav {
-    padding: 10px
-}
 
 .par {
     font-family: montserrat;
     padding: 10px;
     padding-top:10px;
     padding-bottom:10px;
+    padding-left: 10px;
     font-size: 110%;
+}
+
+.par1 {
+    font-family: montserrat;
+    padding: 15px;
+    padding-top: 0px;
+    font-size: 110%;
+
+}
+
+.container {
+    background-color: rgb(1, 148, 141);
+    color: white;
+
+
+
 }
 
 .center-text {
     font-family: montserrat;
-    padding: 10px;
-    font-size: 110%;
+    font-size: 100%;
     text-align: center;
 
 }
@@ -78,7 +93,7 @@ html, body {
 }
 
   .navbar a {
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -100,7 +115,7 @@ html, body {
     margin: 0;
     position: fixed;
     overflow: hidden;
-    background: #2367ac;
+    background: #14213D;
     color: white;
     width: 100%;
     top: 0;
@@ -169,7 +184,58 @@ html, body {
 }
 
 .row3::after {
-    content: "";
+    color: white;
     clear: both;
     display: table;
+}
+
+.home-header {
+    font-size: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: white;
+    background-color:#14213D;
+    font-family: montserrat;
+    text-align: center;
+
+}
+
+.home-under-header {
+    font-size: 20px;
+    font-weight: 50;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    font-family: montserrat;
+    color: white;
+    line-height: 1.7em;
+    background-color:#14213D;
+    text-align: center;
+
+
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 50;
+    padding-top: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    font-family: montserrat;
+    color: #FCA311;
+    background-color:#14213D;
+    text-align: center;
+
+}
+
+.under-nav {
+    font-family: montserrat;
+    padding: 10px;
+    padding-bottom: 20px;
+   
+    color: white;
+    background-color:#14213D;
 }
