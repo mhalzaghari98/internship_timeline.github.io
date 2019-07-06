@@ -66,7 +66,7 @@ html, body {
 }
 
 .nav-links:hover {
-    text-decoration: none; color:red;
+    text-decoration: none; color:#FCA311;
 }
 
 .norm-links:hover {
@@ -135,7 +135,7 @@ html, body {
     padding-top: 0px;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 10px;
+    padding-bottom: 1s0px;
     font-family: montserrat;
     color: #FCA311;
     background-color:#14213D;
@@ -260,8 +260,19 @@ html, body {
     font-size: 18px;
     padding-left: 10%;
     padding-right: 10%;
-
     text-align: center;
+
+}
+
+.center-text-two {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-family: montserrat;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    line-height: 1.5em;
 
 }
 
@@ -321,6 +332,16 @@ html, body {
     width: 33.333%;
     display: flex;
     justify-content: space-between;
+}
+
+.column4 {
+    float: center;
+    width: 33.333%;
+    display: flex;
+    justify-content: space-between;
+    font-family: montserrat;
+    color: black;
+
 }
 
 .row3::after {
