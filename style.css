@@ -76,8 +76,7 @@ html, body {
 .norm-links:visited {
     text-decoration: none; color:black; 
 }
-
-
+   
 * {
     box-sizing: border-box;
 }
@@ -249,31 +248,32 @@ html, body {
     font-size: 110%;
 }
 
-.container {
-    background-color: rgb(1, 148, 141);
-    color: white;
-}
 
 .center-text {
-    padding-top: 25px;
-    font-family: montserrat;
-    font-size: 18px;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-
-}
-
-.center-text-two {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 10px;
     font-family: montserrat;
     font-size: 18px;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
+    line-height: 1.5em;
+    
+}
+
+.center-text-two {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: montserrat;
+    font-size: 18px;
     line-height: 1.5em;
 
+}
+
+.container > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
 }
 
 .title2 {
@@ -309,8 +309,17 @@ html, body {
 
 .logos2 {
     width: 100px;
-    display: block;
+    
+    text-align: center;
 }
+
+.logos3 {
+    width: 33.33333%;
+    text-align: center;
+
+}
+
+
 
 .column2 {
     float: left;
@@ -332,6 +341,7 @@ html, body {
     width: 33.333%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .column4 {
