@@ -218,7 +218,7 @@ html, body {
 
 .dark-blue2 {
     background-color: #14213D;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 .gray-text {
@@ -373,10 +373,10 @@ html, body {
 }
 
 .button {
-    background-color: #FCA311; /* Green */
+    background-color: #FCA311;
     border: none;
     color: white;
-    padding-top: 25px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -384,5 +384,12 @@ html, body {
     cursor: pointer;
   }
 
-  .button1 {border-radius: 16px;}
+  .button1 {
+      border-radius: 16px;
+    }
+
+.center {
+    text-align: center;
+    padding-top:50px;
+}
 
