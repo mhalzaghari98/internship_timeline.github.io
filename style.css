@@ -218,7 +218,7 @@ html, body {
 
 .dark-blue2 {
     background-color: #14213D;
-    padding-bottom: 75px;
+    padding-bottom: 30px;
 }
 
 .gray-text {
@@ -323,7 +323,7 @@ html, body {
 }
 
 .logos4 {
-    width:500px;
+    width:200px;
 }
 
 .logos3 {
@@ -390,6 +390,6 @@ html, body {
 
 .center {
     text-align: center;
-    padding-top:50px;
+    padding-top:20px;
 }
 
