@@ -69,13 +69,34 @@ html, body {
     text-decoration: none; color:#FCA311;
 }
 
-.norm-links:hover {
-    text-decoration: none; color:blue;
+.norm-links {
+    font-size: 18px;
+    font-family: montserrat;
+    color: #14213D;
+    text-align: center;
 }
 
-.norm-links:visited {
-    text-decoration: none; color:black; 
+.norm-text {
+
+        font-size: 18px;
+        font-family: montserrat;
+        color: #14213D;
 }
+
+.norm-text2 {
+
+    font-size: 18px;
+    font-family: montserrat;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5em;
+}
+
+.norm-links:hover {
+    text-decoration: none; color:#FCA311;
+}
+
    
 * {
     box-sizing: border-box;
@@ -324,6 +345,10 @@ html, body {
 
 .logos4 {
     width:200px;
+}
+
+.logos5 {
+    width:500px;
 }
 
 .logos3 {
