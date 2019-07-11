@@ -61,6 +61,10 @@ html, body {
 }
 
 
+.nav-links {
+    color: white;
+}
+
 .nav-links:visited {
     text-decoration: none; color:white; 
 }
