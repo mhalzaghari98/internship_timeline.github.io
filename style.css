@@ -18,20 +18,7 @@ html, body {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
-
-.navbar a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
   
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-
 #nav-bar {
     margin: 0;
     font-size: 15px;
@@ -48,18 +35,11 @@ html, body {
     top: 0;
 }
 
-#nav-bar a {
-    float: left;
-    display: block;
-    text-align: center;
-}
-
 .nav-li {
     display: inline-block;
     margin: 0 10px;
 
 }
-
 
 .nav-links {
     color: white;
@@ -233,6 +213,7 @@ html, body {
     padding: 2%;
     line-height: 1.5em;
     font-size: 20px;
+    text-align: center;
 
 }
 
@@ -343,7 +324,6 @@ html, body {
 
 .logos2 {
     width: 100px;
-    
     text-align: center;
 }
 
@@ -352,14 +332,25 @@ html, body {
 }
 
 .logos5 {
-    width:500px;
+    width:50%;
     height: auto;
+    text-align: center;
 }
 
 .logos3 {
     width: 33.33333%;
     text-align: center;
 
+}
+
+.background {
+    background-image: url("images/startup_image.png");
+    opacity: 0.5;
+
+}
+
+.opacity {
+    opacity: 1;
 }
 
 
