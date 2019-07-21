@@ -292,6 +292,7 @@ html, body {
 .center-text-two {
     padding-top: 10px;
     padding-bottom: 10px;
+    
     font-family: montserrat;
     font-size: 18px;
     line-height: 1.5em;
@@ -305,6 +306,8 @@ html, body {
     zoom: 1; /* Trigger hasLayout */
     width: 33%;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .container2 > div {
