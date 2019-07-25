@@ -7,6 +7,11 @@ html, body {
     margin:0;
     padding:0;
 }
+   
+* {
+    box-sizing: border-box;
+}
+
 
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
@@ -19,6 +24,7 @@ html, body {
     #secondary { width:100%; margin:0; border:none; }
 }
 
+/* Navigation bar styling */
 .navbar a {
     color: black;
     text-align: center;
@@ -60,7 +66,6 @@ html, body {
 
 }
 
-
 .nav-links {
     color: white;
 }
@@ -80,6 +85,11 @@ html, body {
     text-align: center;
 }
 
+.norm-links:hover {
+    text-decoration: none; color:#FCA311;
+}
+
+
 .norm-text {
 
         font-size: 18px;
@@ -95,15 +105,6 @@ html, body {
     padding-left: 40px;
     padding-right: 40px;
     line-height: 1.5em;
-}
-
-.norm-links:hover {
-    text-decoration: none; color:#FCA311;
-}
-
-   
-* {
-    box-sizing: border-box;
 }
 
 .under-nav {
@@ -177,7 +178,6 @@ html, body {
     line-height: 1.7em;
     background-color:#14213D;
     text-align: center;
-
 }
 
 
@@ -251,35 +251,6 @@ html, body {
     color: #E5E5E5;
 }
 
-.mailer-padding {
-    background-color: #14213D;
-    text-align: center;
-}
-
-.center-form {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.par {
-    font-family: montserrat;
-    padding: 10px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left: 10px;
-    font-size: 110%;
-}
-
-.par1 {
-    font-family: montserrat;
-    padding: 15px;
-    padding-top: 0px;
-    font-size: 110%;
-}
-
-
 .center-text {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -292,7 +263,6 @@ html, body {
 .center-text-two {
     padding-top: 10px;
     padding-bottom: 10px;
-    
     font-family: montserrat;
     font-size: 18px;
     line-height: 1.5em;
@@ -326,24 +296,6 @@ html, body {
     padding-top: 10px;
     font-size: 25px;
 }
-.column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-.logos {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .logos2 {
     width: 100px;
@@ -351,59 +303,10 @@ html, body {
     text-align: center;
 }
 
-.logos4 {
-    width:200px;
-}
-
-.logos5 {
-    width:500px;
-    height: auto;
-}
-
 .logos3 {
     width: 33.33333%;
     text-align: center;
 
-}
-
-
-.column2 {
-    float: left;
-    width: 33.333%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.row2::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.column3 {
-    float: left;
-    width: 33.333%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.column4 {
-    float: center;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    font-family: montserrat;
-    color: black;
-
-}
-
-.row3::after {
-    color: white;
-    clear: both;
-    display: table;
 }
 
 .button {
