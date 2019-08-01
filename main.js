@@ -1,5 +1,69 @@
-<div data-elink="https://elink.io/embed/9b9ff17"><p style="color:#c9c8cd; font-family:Arial,sans-serif; 
-font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; 
-overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; 
-white-space:nowrap;"><a href="https://elink.io/p/header-text-9b9ff17" style="color:#c9c8cd; 
-font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">See Original</a> | Powered by <a href="https://elink.io" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">elink</a></p></div><p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://elink.io/p/header-text-9b9ff17" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">See Original</a> | Powered by <a href="https://elink.io" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">elink</a></p><script type="text/javascript" src="https://d1sf3a4rercrry.cloudfront.net/embed.js"></script>
+
+
+// ES6 Class
+class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+      this.txtElement = txtElement;
+      this.words = words;
+      this.txt = '';
+      this.wordIndex = 0;
+      this.wait = parseInt(wait, 10);
+      this.type();
+      this.isDeleting = false;
+    }
+  
+    type() {
+      // Current index of word
+      const current = this.wordIndex % this.words.length;
+      // Get full text of current word
+      const fullTxt = this.words[current];
+  
+      // Check if deleting
+      if(this.isDeleting) {
+        // Remove char
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        // Add char
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+  
+      // Insert txt into element
+      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+  
+      // Initial Type Speed
+      let typeSpeed = 75;
+  
+      if(this.isDeleting) {
+        typeSpeed /= 2;
+      }
+  
+      // If word is complete
+      if(!this.isDeleting && this.txt === fullTxt) {
+        // Make pause at end
+        typeSpeed = this.wait;
+        // Set delete to true
+        this.isDeleting = true;
+      } else if(this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        // Move to next word
+        this.wordIndex++;
+        // Pause before start typing
+        typeSpeed = 500;
+      }
+  
+      setTimeout(() => this.type(), typeSpeed);
+    }
+  }
+  
+  
+  // Init On DOM Load
+  document.addEventListener('DOMContentLoaded', init);
+  
+  // Init App
+  function init() {
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    // Init TypeWriter
+    new TypeWriter(txtElement, words, wait);
+  }
