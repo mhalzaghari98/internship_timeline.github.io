@@ -126,10 +126,10 @@ html, body {
   }
 
 #nav-bar {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.14); 
     margin: 0;
-    font-size: 15px;
-    line-height: 1.3em;
-    padding-top: 10px;
+    font-size: 18px;
+    padding: 20px 40px;
     float: left;
     font-family: karla;
     margin: 0;
